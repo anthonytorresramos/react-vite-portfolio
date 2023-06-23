@@ -12,12 +12,12 @@ const Header = () => {
     >
       <Container>
         <Navbar.Brand href="#home">Anthony CMS</Navbar.Brand>
-        <Navbar.Toggle />
+        {/* <Navbar.Toggle />
         <Navbar.Collapse>
           <Nav className="me-auto">
-            {/* <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About us</Nav.Link> */}
-            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/about">About us</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -27,9 +27,9 @@ const Header = () => {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown> */}
+            </NavDropdown>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse> */}
       </Container>
     </Navbar>
   );
