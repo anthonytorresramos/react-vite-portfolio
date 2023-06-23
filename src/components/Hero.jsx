@@ -1,6 +1,8 @@
 import ReactPlayer from "react-player";
 import heroImg from "../assets/img/hero1.svg";
 import portVideo from "../assets/video/port-video.mp4";
+import portThumb from "../assets/img/port-thumb.png";
+import { useState } from "react";
 
 const Hero = () => {
   return (
@@ -12,8 +14,15 @@ const Hero = () => {
               url={portVideo}
               controls={true}
               width="100%"
-              height="auto"
+              height="100%"
               playing={true}
+              config={{
+                file: {
+                  attributes: {
+                    poster: portThumb,
+                  },
+                },
+              }}
               className="d-block mx-lg-auto img-fluid"
             />
           </div>
@@ -29,7 +38,7 @@ const Hero = () => {
             interactivity. Explore my projects and let's connect to bring your
             ideas to life!"
           </p>
-          <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+          <div className="d-grid gap-2 d-md-block justify-content-center">
             <button
               type="button"
               className="btn btn-primary btn-lg px-4 me-md-2"
