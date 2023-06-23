@@ -1,3 +1,16 @@
 html {
   scroll-behavior: smooth;
 }
+
+.card:hover {
+  box-shadow: 0 0 5px rgb(14, 41, 84);
+  transform: translateY(-2px);
+}
+
+/* change primary button  */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: rgb(14, 41, 84) !important;
+}

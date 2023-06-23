@@ -1,9 +1,12 @@
 import { projects } from "../project_data";
 
 console.log(projects);
-const MyProjects = () => {
+const MyProjects2 = () => {
   return (
-    <section id="my-projects" style={{ minHeight: "80vh", paddingTop: "10vh" }}>
+    <section
+      id="my-projects2"
+      style={{ minHeight: "80vh", paddingTop: "10vh" }}
+    >
       <div className="project-section">
         <div className="container">
           <h1 className="text-center">My Projects</h1>
@@ -44,4 +47,4 @@ const MyProjects = () => {
     </section>
   );
 };
-export default MyProjects;
+export default MyProjects2;

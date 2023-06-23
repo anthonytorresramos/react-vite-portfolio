@@ -5,7 +5,6 @@ import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Hero = () => {
   const handleEmailButton = () => {
-    // window.location.href = "mailto:anthonytorresramos3@gmail.com";
     const email = "anthonytorresramos3@gmail.com";
     const subject = encodeURIComponent("Subject of the email");
     const body = encodeURIComponent("Body of the email");
@@ -13,9 +12,9 @@ const Hero = () => {
   };
   return (
     <section
-      className="container-fluid col-xxl-8 px-4 py-5"
+      className="container-fluid col-xxl-8  "
       id="home"
-      style={{ height: "100vh" }}
+      style={{ minHeight: "100vh", paddingTop: "10vh" }}
     >
       <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div className="col-12 col-sm-12 col-lg-6">
@@ -34,13 +33,12 @@ const Hero = () => {
                 },
               }}
               className="d-block mx-lg-auto img-fluid"
+              style={{ cursor: "pointer", borderRadius: "10px" }}
             />
           </div>
         </div>
         <div className="col-lg-6 text-center">
-
           <h1 className="display-6 fw-bold lh-1 mb-3">Hi, I'm Anthony</h1>
-
 
           <p className="lead">
             My portfolio showcases a collection of projects organized with
@@ -48,7 +46,7 @@ const Hero = () => {
             present my work, ensuring a seamless browsing experience. Built with
             React and Vite, my portfolio is optimized for speed and
             interactivity. Explore my projects and let's connect to bring your
-            ideas to life!"
+            ideas to life!
           </p>
           <div className="d-grid gap-2 d-md-block justify-content-center">
             <button

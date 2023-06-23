@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import { useState } from "react";
 import MyProjects from "../components/MyProjects";
+import MyProject2 from "../components/MyProject2";
 
 const HomeLayout = () => {
   //   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -15,6 +16,7 @@ const HomeLayout = () => {
       <Header />
       <Hero />
       <MyProjects />
+      <MyProject2 />
       <Outlet />
     </section>
   );
