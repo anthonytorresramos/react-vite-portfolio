@@ -1,12 +1,22 @@
 import ReactPlayer from "react-player";
-import heroImg from "../assets/img/hero1.svg";
 import portVideo from "../assets/video/port-video.mp4";
 import portThumb from "../assets/img/port-thumb.png";
-import { useState } from "react";
+import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Hero = () => {
+  const handleEmailButton = () => {
+    // window.location.href = "mailto:anthonytorresramos3@gmail.com";
+    const email = "anthonytorresramos3@gmail.com";
+    const subject = encodeURIComponent("Subject of the email");
+    const body = encodeURIComponent("Body of the email");
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+  };
   return (
-    <div className="container col-xxl-8 px-4 py-5">
+    <section
+      className="container-fluid col-xxl-8 px-4 py-5"
+      id="home"
+      style={{ height: "100vh" }}
+    >
       <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div className="col-12 col-sm-12 col-lg-6">
           <div className="text-center">
@@ -14,7 +24,7 @@ const Hero = () => {
               url={portVideo}
               controls={true}
               width="100%"
-              height="100%"
+              //   height="auto"
               playing={true}
               config={{
                 file: {
@@ -28,7 +38,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="col-lg-6 text-center">
-          <h1 className="display-6 fw-bold lh-1 mb-3">Hi, I'm Anthony</h1>
+          <h1 className="display-1 fw-bold lh-1 mb-3">Hi, I'm Anthony</h1>
 
           <p className="lead">
             My portfolio showcases a collection of projects organized with
@@ -42,19 +52,24 @@ const Hero = () => {
             <button
               type="button"
               className="btn btn-primary btn-lg px-4 me-md-2"
+              onClick={handleEmailButton}
             >
-              Primary
+              <FaEnvelope size={32} /> Email Me
             </button>
-            <button
-              type="button"
-              className="btn btn-outline-secondary btn-lg px-4"
+
+            <a
+              href="https://www.linkedin.com/in/anthony-ramos-dev/"
+              className="btn btn-primary btn-lg"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Default
-            </button>
+              <FaLinkedin className="me-2" />
+              LinkedIn Profile
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Hero;
