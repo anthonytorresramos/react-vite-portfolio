@@ -5,6 +5,7 @@ import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Hero = () => {
   const handleEmailButton = () => {
+
     const email = "anthonytorresramos3@gmail.com";
     const subject = encodeURIComponent("Subject of the email");
     const body = encodeURIComponent("Body of the email");
@@ -12,9 +13,11 @@ const Hero = () => {
   };
   return (
     <section
+
       className="container-fluid col-xxl-8  "
       id="home"
       style={{ minHeight: "100vh", paddingTop: "10vh" }}
+
     >
       <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div className="col-12 col-sm-12 col-lg-6">
@@ -38,7 +41,9 @@ const Hero = () => {
           </div>
         </div>
         <div className="col-lg-6 text-center">
+
           <h1 className="display-6 fw-bold lh-1 mb-3">Hi, I'm Anthony</h1>
+
 
           <p className="lead">
             My portfolio showcases a collection of projects organized with

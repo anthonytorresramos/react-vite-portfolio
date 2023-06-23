@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .card:hover {
   box-shadow: 0 0 5px rgb(14, 41, 84);
   transform: translateY(-2px);
@@ -14,3 +15,5 @@ html {
 .btn-primary:visited {
   background-color: rgb(14, 41, 84) !important;
 }
+
+

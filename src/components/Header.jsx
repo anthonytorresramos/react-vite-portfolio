@@ -15,9 +15,11 @@ const Header = () => {
         <Navbar.Toggle />
         <Navbar.Collapse>
           <Nav className="me-auto">
+
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#my-projects">Projects</Nav.Link>
             <Nav.Link href="#my-projects2">Projects2</Nav.Link>
+
 
             {/* <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About us</Nav.Link> */}

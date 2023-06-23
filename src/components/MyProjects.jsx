@@ -1,3 +1,4 @@
+
 import { projects } from "../project_data";
 
 console.log(projects);
@@ -38,6 +39,7 @@ const MyProjects = () => {
                 </div>
               );
             })}
+
           </div>
         </div>
       </div>
