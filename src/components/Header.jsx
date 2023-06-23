@@ -15,6 +15,7 @@ const Header = () => {
         <Navbar.Toggle />
         <Navbar.Collapse>
           <Nav className="me-auto">
+
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#my-projects">Projects</Nav.Link>
 
