@@ -28,8 +28,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="col-lg-6 text-center">
-          <h1 className="display-3 fw-bold lh-1 mb-3">Welcome</h1>
-          <h1 className="display-3 fw-bolder lh-1 mb-3">to my Portfolio</h1>
+          <h1 className="display-6 fw-bold lh-1 mb-3">Hi, I'm Anthony</h1>
+
           <p className="lead">
             My portfolio showcases a collection of projects organized with
             Contentful, a headless CMS. With Contentful, I can easily update and
