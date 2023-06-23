@@ -11,6 +11,9 @@ const Hero = () => {
             <ReactPlayer
               url={portVideo}
               controls={true}
+              width="100%"
+              height="auto"
+              playing={true}
               className="d-block mx-lg-auto img-fluid"
             />
           </div>
